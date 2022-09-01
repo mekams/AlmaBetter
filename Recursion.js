@@ -63,10 +63,13 @@ function range(start, end){
 }
 
 function recurse(start, end, li){
-    if(end==start)
+    if(end==start){
         return start;
-    let push =recurse(start,end-1,li)
-    li.push(push)
-    return end;
+    }
+    else{
+        let push =recurse(start,end-1,li)
+        li.push(push)
+    } 
+     return end;
 }
-  console.log(range(1,5))
+  range(1,4)
