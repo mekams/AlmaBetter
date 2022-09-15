@@ -1,4 +1,3 @@
-
 function bubble_sort(arr){
     for(let i =0; i<arr.length;i++){
         for(let j=0;j<arr.length-i-1;j++){
@@ -13,4 +12,5 @@ function bubble_sort(arr){
 }   
 
 let ar= [5,10,3,0,4]
-bubble_sort(ar)
+let arr1= [4,6,1]
+bubble_sort(arr1)

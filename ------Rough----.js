@@ -1,7 +1,7 @@
 // let n;
 // n =parseInt(prompt('Enter a number : '));
 
-const { indexOf } = require("lodash")
+// const { indexOf } = require("lodash")
 
 // if(n%2===0){
 //     if(n>=2 && n<=5){
@@ -468,3 +468,139 @@ const { indexOf } = require("lodash")
 
 // stack.clear();
 // console.log(stack.items);
+
+
+// let arr =   [8,2,7,5,1,4,0]
+// let i,j,index,temp
+// let n = arr.length
+// // function bubbleS(list){
+//     let i,j;
+//     for(i=0; i<list.length; i++){
+//         for(j=0; j<list.length-i-1; j++){
+//             if(list[j]>list[j+1]){
+//                 let temp = list[j]
+//                     list[j]=list[j+1]
+//                     list[j+1]=temp
+//             }
+//         }
+//     }
+//     console.log(list)
+// }
+
+// bubbleS(arr)
+
+
+// function selectionS(list){
+//     for (i=0; i<n-1; i++){
+//         index = i
+//         for(j=i+1; j< n; j++){
+//             if(list[j]<list[index]){
+//                 index = j
+//             }
+//         }
+//         temp = list[index]
+//         list[index] =list[i]
+//         list[i] = temp
+//     }
+//     console.log(list)
+// }
+
+// selectionS(arr)
+
+
+// const arr = [10, 20, 30, 40]
+
+// function recurse(arr){
+//     while(arr.length===1){
+//         return arr[0]
+//     }
+//         return arr.pop() +recurse(arr)
+//     }
+
+// console.log(recurse(arr))
+
+
+// JavaScript program for Merge Sort
+
+// Merges two subarrays of arr[].
+// First subarray is arr[l..m]
+// Second subarray is arr[m+1..r]
+function merge(arr, l, m, r)
+{
+ var n1 = m - l + 1;
+ var n2 = r - m;
+
+ // Create temp arrays
+ var L = new Array(n1);
+ var R = new Array(n2);
+
+ // Copy data to temp arrays L[] and R[]
+ for (var i = 0; i < n1; i++)
+  L[i] = arr[l + i];
+ for (var j = 0; j < n2; j++)
+  R[j] = arr[m + 1 + j];
+
+ // Merge the temp arrays back into arr[l..r]
+
+ // Initial index of first subarray
+ var i = 0;
+
+ // Initial index of second subarray
+ var j = 0;
+
+ // Initial index of merged subarray
+ var k = l;
+
+ while (i < n1 && j < n2) {
+  if (L[i] <= R[j]) {
+   arr[k] = L[i];
+   i++;
+  }
+  else {
+   arr[k] = R[j];
+   j++;
+  }
+  k++;
+ }
+
+ // Copy the remaining elements of
+ // L[], if there are any
+ while (i < n1) {
+  arr[k] = L[i];
+  i++;
+  k++;
+ }
+
+ // Copy the remaining elements of
+ // R[], if there are any
+ while (j < n2) {
+  arr[k] = R[j];
+  j++;
+  k++;
+ }
+}
+
+// l is for left index and r is
+// right index of the sub-array
+// of arr to be sorted */
+function mergeSort(arr,l, r){
+ if(l>=r){
+  return;//returns recursively
+ }
+ var m =parseInt((r+l)/2);
+ mergeSort(arr,l,m);
+ mergeSort(arr,m+1,r);
+ merge(arr,l,m,r);
+}
+
+// function printArray( A, size)        // Function to print an array
+// {
+//  for (var i = 0; i < size; i++)
+//  console.log( A[i] + " ");
+// }
+
+
+var arr = [ 12, 11, 13, 5, 6, 7 ];
+mergeSort(arr,0,arr.length-1)
+console.log(arr) 
+
