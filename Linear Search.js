@@ -1,6 +1,6 @@
-function linearSearch(arr,value){
-    let index = 0;
-    let found = false;
+function linearSearch(arr,value){   
+    let index = 0;                      //initialise
+    let found = false;                  
     while(index<arr.length){
         if(arr[index]===value){
             found =true;
