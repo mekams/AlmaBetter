@@ -40,6 +40,37 @@ class linkedList{               // class linked list for travelling
         }
         console.log(currentNode.data)
     }
+
+    getAt = function(index){
+        let counter =0
+        let tempNode = this.head
+        while(tempNode){
+            if(counter===index){
+                return tempNode
+            }else{
+                counter++
+                tempNode=tempNode.next
+            }
+        }
+        return null
+    }
+
+    insertatBeginning = function(data){          //insert a node at beginning
+        let newNode= new Node(data)
+        newNode.next = this.head
+        this.head = newNode
+        // return this.head
+    }
+
+    insertatend = function(data){
+        let newNode = new Node(data)
+        let tempNode= this.head
+        while(tempNode.next !== null){
+            tempNode =tempNode.next
+        }
+        tempNode.next =newNode
+        newNode.next = null
+    }
 }
 
 let n1 = new Node(12)                       //initialising objects to traverse by class and  creating nodes
@@ -51,10 +82,20 @@ n1.next=n2                                    //manual linking of nodes
 n2.next=n3
 n3.next=n4
 
-let ll =new linkedList(n1)                  // initialising linked list
+let list =new linkedList(n1)                  // initialising linked list
 
 
-ll.printLinkedlist()
-ll.size()
-console.log(ll.getfirstNode())
-ll.getlastNode()
+list.printLinkedlist()
+
+list.size()
+console.log(list.getfirstNode())
+
+list.getlastNode()
+console.log(list.getAt(1).data)
+
+list.insertatBeginning(909)
+list.insertatBeginning(203)
+list.printLinkedlist()
+
+list.insertatend(786)
+list.printLinkedlist()
