@@ -100,7 +100,7 @@ class linkedList{                               // class linked list for travell
         if(index===0){                              //method call which is already created
             this.deleteFirstNode()
         }
-        let prev = this.getatIndex(index-1)
+        let prev = this.getatIndex(index-1)          //invoking a function  
         if(!prev || !prev.next){                    //boundary condition
             return
         }
