@@ -1,0 +1,77 @@
+#allinone{
+    word-spacing: 1.2px;
+    letter-spacing: 1.5px;
+}
+
+#black-white{
+    background-color:darkblue;
+    color: white;
+    height:50px;
+    font-size: 35px;
+    /* text-align: center;                           Main Heading */
+}
+
+h2{
+    color:blue;                             /*All Heading <h2> blue in color*/
+}
+
+.header{
+    color:white;
+    background-color: rgba(123, 127, 83, 0.785);
+    opacity:0.7;
+    /* text-align: left; */
+}
+
+#about-me{
+    color:#999;
+    font-weight: bold;
+}
+
+#skills th{
+    border:2px solid black ;
+    color: white;
+    background-color: black;
+}
+
+#skills td{
+    border:2px solid black ;
+}
+
+.mainlist li{
+    color: crimson;
+}
+
+.sublist li{
+    color:royalblue;
+}
+
+#contact{
+    background-color:azure;
+    opacity:0.9;
+}
+
+.adjust{
+    height:25px;
+    width:400px
+}
+
+
+.button{
+    color:white;
+    background-color:darkblue;
+}
+
+a:hover{
+    background-color:darkgray;
+    color:white;
+}
+
+#copyright{
+    text-align: center;
+    background-color: black;
+    color: whitesmoke;
+    height: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:28px;
+    opacity: 0.8;
+}
