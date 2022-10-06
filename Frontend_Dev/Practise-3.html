@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+    <title>My Practice Webpage</title>
+    <!-- <link href="Rough_style.css" type="text/css" rel="stylesheet"/> -->
+    <style type="text/css">
+        * {
+            margin: 0px;
+        }
+
+        #flexmain{
+            display:flex;
+            flex-flow: column wrap;
+        }
+        .container {
+            background-color: white;
+            display: grid;
+            height: 1000px;
+            /* width:900px; */
+            grid-template-columns: 25% 50% 25%;
+            grid-template-rows: 43px 1fr 55%;
+            row-gap: 2px;
+            column-gap: 0px;
+            background-image: url("https://cdn5.vectorstock.com/i/1000x1000/77/54/young-developer-programmer-working-flat-character-vector-25117754.jpg");
+            /* background-position: center; */
+            background-size: 56% 53%;
+            background-repeat: no-repeat;
+            /* background-origin::border-box ; */
+        }
+
+        .flex4{
+            background-image: url("https://cdn5.vectorstock.com/i/1000x1000/84/94/cartoon-coder-young-man-vector-31688494.jpg");
+            background-size: 118% 123%;
+            background-repeat: no-repeat;
+            opacity: 0.8;
+            /* list-style:square ; */
+            /* font-weight: bold; */
+            /* overflow:auto; */
+        }
+
+        .flex4 li{
+            list-style:disc;
+            text-decoration:solid;
+            font-weight: bolder;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /* text-align:right; */
+            /* display:flex; */
+            padding: 6px;
+        }
+
+        .flex3 {
+            padding: 30px;
+            text-align: center;
+        }
+
+        a {
+            color: wheat;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: white;
+        }
+
+        #quote {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: large;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+
+        .header {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            background-color: royalblue;
+            color: whitesmoke;
+            font-size: 40px;
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        /* h1{
+            display:flex;
+            flex-flow:column wrap;
+        } */
+
+        .footer {
+            /* grid-column-start: 1; */
+            /* grid-column-end: 4; */
+            grid-column: 1/span 3;
+            background-color: black;
+            color: white;
+            /* margin:5px */
+        }
+    </style>
+</head>
+
+<body><section id="flexmain">
+    <div class="container">
+        <div class=" header">------Welcome to the world of Programmers------</div>
+        <div class="flex flex2"></div>
+        <div class="flex flex3">
+            <h1>
+                Transformation begins here.<br>
+                <h2>Join us today</h2><br><br>
+                <p id="quote">"Better to start today instead <br>
+                    waiting for tommorrow"</p>
+            </h1>
+        </div>
+        <div class="flex flex4">
+            <h2>We have experts having 10+ years of Industry working experience.</h2><br>
+            <br>
+            <p>
+            <ul>
+                <li>Java</li>
+                <li>Python</li>
+                <li>Machine Learning</li>
+                <li>Ruby</li>
+                <li>Web Development</li>
+                <li>Manual Testing</li>
+            </ul>
+            </p>
+        </div>
+        <div class=" footer">
+            <h2>Contact</h2>
+            <fieldset>
+                <legend>Drop a Message: </legend>
+                <form action="https://www.example.com" method="get">
+                    <label for="name1">Name: </label>
+                    <input class="adjust" type="text" name="name" id="name1" />
+                    </br>
+                    </br>
+                    <label for="mail">Email: </label>
+                    <input class="adjust" type="text" name="email" id="mail" />
+                    </br>
+                    </br>
+                    <label for="checkit">Select your profession ?</label>
+                    <select class="adjust" name="student" id="checkit">
+                        <option value="Student">Student</option>
+                        <option value="found">Founder/CEO</option>
+                        <option value="tech">Tech Lead</option>
+                        <option value="HR">HR</option>
+                    </select><br /><br>
+                    <p> Message:</br>
+                        <textarea class="adjust" rows="2" cols="20" placeholder="Enter the text here:"></textarea>
+                    </p><br>
+                    <label for="connect">Would you like to connect again ?</label></br>
+                    <input type="radio" name="select_one" value="y" id="connect">Yes
+                    <input type="radio" name="select_one" value="n" id="connect">No
+                    <input type="radio" name="select_one" value="m.b" id="connect">May be
+                    </br>
+                    </br>
+                    <input class="button" type="submit" value="Send Message" />
+                </form>
+            </fieldset>
+            <br>
+            <p>To connect with me over social media</br>Kindly visit:</br>
+            <ul>
+                <li><a href="https://www.facebook.com" target="_blank">Facebook <img
+                            src="https://duneaudioproductions.com/wp-content/uploads/2021/02/photos-facebook-logo-png-transparent-background-13.png"
+                            width="30" height="20" alt="error" /></a></li>
+                <li><a href="https://www.linkedin.com/in/kamran51/" target="_blank">Linkedin <img
+                            src="https://play-lh.googleusercontent.com/kMofEFLjobZy_bCuaiDogzBcUT-dz3BBbOrIEjJ-hqOabjK8ieuevGe6wlTD15QzOqw"
+                            width="25" height="20" alt="error" /></a></li>
+                <li><a href="https://www.instagram.com" target="_blank">Instagram <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" width="25"
+                            height="20" alt="error" /></a></li>
+                <li><a href="https://www.twitter.com" target="_blank">Twitter <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/640px-Twitter-logo.svg.png"
+                            width="25" height="20" alt="error" /></a></li>
+            </ul>
+            <br />
+            <p id="copyright">Copyright &copy 2022 All rights reserved</p>
+        </div>
+    </div>
+</section>
+</body>
+
+</html>
