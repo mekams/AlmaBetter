@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Navbar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <style type="text/css">
+ /*-----------------Header starts here-----------------------------------------------------------  */
+       *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .main{
+            /* background-color: aliceblue; */
+            background-image: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.1),rgba(0,0,0,0.7)),url("https://images.hdqwalls.com/download/mclaren-elva-2021-4k-sz-7680x4320.jpg");/*,url("https://images.hdqwalls.com/download/vossen-orange-c8-corvette-8k-jt-7680x4320.jpg");*/
+            height: 100vh;
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+        }
+
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color:white;
+            padding-left:10% ;
+            padding-top:30px;
+            padding-right:10% ;
+            letter-spacing: 2px;
+        }
+
+        .sub li{
+         list-style: none;
+         display: inline-block;
+         padding:4px 14px;
+         border-radius: 25px;
+         margin: 10px 30px;
+         border: 1px solid rgba(255, 253, 253, 0.084);
+         background:linear-gradient(rgba(35, 37, 37, 0.1),rgba(252, 46, 204, 0.1));
+        }
+        .sub li a{
+            text-decoration: none;
+            color: rgb(205, 169, 40);
+            transition: all 0.4s ease;
+        }
+    
+        .sub li a:hover{
+            background-color:rgb(187, 171, 171);
+            color: black;
+            /* transform: scale(1.3);
+            cursor: pointer; */
+        }
+        
+        .seaBt input{
+            padding: 5px 25px;;
+            margin: -72px;
+        }
+
+        .seaBt button,button a{
+            border:none;
+            font-size: 12px;
+            font-weight: 600;
+            font-variant: small-caps;
+            color: black;
+            position: fixed;
+        }
+
+        .seaBt button a:hover,button:hover{
+            color:rgb(128, 117, 86) ;
+            /* transform: rotate(0.5turn); */
+            transform: scale(1.3);
+            cursor: pointer;
+            transition: 0.6s;
+        }
+
+        nav ul li a.active{
+            background-color:rgb(156, 132, 143);
+            color: black;
+        }
+
+        /* @media (max-width:1000px) {
+            nav ul{
+                position:fixed;
+                left:0px;
+                top:0px;
+                height:100vh;
+                width:100%;
+                background-color: black;
+                display:block;
+            }
+
+            
+        } */
+      
+/* -----------Footer starts here---------------------------------------------------------------- */
+
+    </style>
+</head>
+<body>
+    <section class=".container">
+    <!-- Header tag contains nav bar using flex -->
+    <header class="main">
+        <nav>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQliJ32vlXcsQ6SrJuXIGbWuYcIFxd__iuQeQ&usqp=CAU" width="150" height="80"/>
+            <ul class="sub">
+                <li><a class="active" href="#" >Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <div class="seaBt">
+                <input type="text" style="border-radius: 5px;" placeholder="Your query please">
+                <button type="button" name="Search"><img src="https://cdn0.iconfinder.com/data/icons/very-basic-2-android-l-lollipop-icon-pack/24/search-512.png" width="10" height="10"/><a href="#">  Search</a></button>
+            </div>
+        </nav>
+    </header>
+</section>
+     <!-- Header tag end here -->
+     <!-- Footer tag will be made using grid -->
+    <footer>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>    
+</body>
+</html>

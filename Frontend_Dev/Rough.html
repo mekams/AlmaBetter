@@ -1,63 +1,332 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<head>
-    <title>My Practice Webpage</title>
-    <!-- <link href="Rough_style.css" type="text/css" rel="stylesheet"/> -->
-    <style type="text/css">
-        
-        /* .container {
-            border: 2px solid grey;
-            height: 45vh;
-            display: flex;
-            flex-direction: column-reverse; */
-            /* justify-content: flex-end; */
-            /* justify-content: flex-start; */
-            /* justify-content: center; */
-            /* align-items: center; */
-            /* align-items: flex-end; */
-            /* align-items: flex-start; */
-            /* flex-wrap: wrap; */
-            /* flex-wrap: wrap-reverse; */
-            /* flex-flow: column wrap; */
-
-        /* }
-
-        .flex {
-            background-color: aquamarine;
-            border: 2px dotted black;
-            margin: 10px;
-            width: 46px;
-            height: 30px;
-        } */
-
-        /* .flex1{
-                -
-        }
-
-        .flex2{
-
-        }
-        .flex3{
-
-        } */
-    </style>
+    <title>CSS - 03</title>
+    <link rel="stylesheet" href="css-03.css">
+    <link rel="shortcut icon" href="//www.microsoft.com/favicon.ico?v2">
 </head>
-
 <body>
-    <div class="container">
-        <div class=" header">------Welcome to the world of Programmers------</div>
-        <div class="flex flex2">Box-2</div>
-        <div class="flex flex3">Box-3</div>
-        <div class="flex flex4">Box-4</div>
-        <div class=" footer">This is my footer</div>
-        <!-- <div class="flex flex4">Box-7</div>
-        <div class="flex flex4">Box-8</div> -->
-    </div>
+    <nav  id="navbar">
+       <h1>Portfolio</h1>
+       <ul>
+        <a href="#home"><li>Home</li></a>
+        <a href="#about-me"><li>About</li></a>
+        <a href="#education"><li>Education</li></a>
+        <a href="#skills"><li>Skills</li></a>
+        <a href="#projects"><li>Projects</li></a>
+        <a href="#contact"><li>Contact</li></a>
+       </ul>
+    </nav>
+   
+    <section class="header" id="home">
+        <h4><span style="color: red;">Hey !</span> I am</h4>
+        <h1 class="my-name">AlmaBetter</h1>
+        <h4>I am <span style="color:yellow ;">undergraduate student</span></h4>
+    </section>
+
+    <section id="about-me">
+        <div style="width:30%;" class="aboutme-img">
+            <img src="./image.jpeg" >
+        </div>
+        <div  class="aboutme-text">
+            <h2 style="text-align:start ;">About Me</h2>
+            <p><strong>Name :</strong> AlmaBetter</p>
+            <p><strong>College :</strong> Aligarh Muslim University</p>
+            <p><strong>Graduation Year :</strong> 2023</p>
+            <p><strong>CGPA :</strong> 9.0</p>
+            <p><strong>Email :</strong><a href="mailto:someone@example.com">almabetteradminssion@gmail.com</a></p>
+            <p><strong>Summary :</strong>
+            <p>Experienced Developer, Team Player and a Leader with a demonstrated history of 
+                working in startups. Strong engineering professional with a Bachelor of Technology 
+                (BTech) focused in Computer Science from National Institute of Technology.</p>
+        </div>
+    </section>
+
+    
+    <section id="education">
+        <h2>Education</h2>
+        <table>
+          <tr>
+            <th>College</th>
+            <th >Courses</th>
+            <th>Percentage / CGPA</th>
+            <th>Duration</th>
+          </tr>
+          <tr>
+            <td>Aligarh Muslim University</td>
+            <td >B.tech</td>
+            <td >9.0 CPI </td>
+            <td >2019-2023</td>
+          </tr>
+          <tr>
+            <td>Aligarh Muslim University</td>
+            <td>Secondary School</td>
+            <td>85%</td>
+            <td>2016-2018</td>
+          </tr>
+          <tr>
+            <td>City School</td>
+            <td>High School</td>
+            <td>10 CGPA</td>
+            <td>2014-2016</td>
+          </tr>
+        </table>
+    </section>
+        
+    <section id="skills">
+        <h2>Skills</h2>
+        <div>
+            <ul class="skills-topic">
+                <li>Languages
+                    <ol>
+                        <li>
+                            <div class="skills-name">
+                                <p>C++</p>
+                                <p>70%</p>
+                            </div> 
+                            <div class="progressbar">
+                              <div class="c-plus"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skills-name python">
+                                <p>Python</p>
+                                <p>40%</p>
+                            </div> 
+                            <div class="progressbar">
+                              <div></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skills-name">
+                                <p>JavaScript</p>
+                                <p>40%</p>
+                            </div> 
+                            <div class="progressbar">
+                              <div></div>
+                            </div>
+                        </li>
+                    </ol>
+                </li>
+                <li>Development
+                    <ol>
+                        <li>
+                             <div class="skills-name">
+                                <p>HTML</p>
+                                <p>40%</p>
+                            </div> 
+                            <div class="progressbar">
+                              <div class="html"></div>
+                            </div>
+                        </li>
+                        <li>
+                             <div class="skills-name">
+                                <p>CSS</p>
+                                <p>40%</p>
+                            </div> 
+                            <div class="progressbar">
+                              <div></div>
+                            </div>
+                        </li>
+                        <li>
+                             <div class="skills-name">
+                                <p>ReactJs</p>
+                                <p>40%</p>
+                            </div> 
+                            <div class="progressbar">
+                              <div></div>
+                            </div>
+                        </li>
+                    </ol>
+                </li>
+                <li>Tools and Software
+                    <ol>
+                        <li>
+                             <div class="skills-name">
+                                <p>Figma</p>
+                                <p>40%</p>
+                            </div> 
+                            <div class="progressbar">
+                              <div></div>
+                            </div>
+                        </li>
+                        <li>
+                             <div class="skills-name">
+                                <p>Postman</p>
+                                <p>40%</p>
+                            </div> 
+                            <div class="progressbar">
+                              <div></div>
+                            </div>
+                        </li>
+                        <li>
+                             <div class="skills-name">
+                                <p>Git</p>
+                                <p>40%</p>
+                            </div> 
+                            <div class="progressbar">
+                              <div></div>
+                            </div>
+                        </li>
+                    </ol>
+                </li>
+            </ul>
+        </div>
+    </section>
+    
+    <section id="projects" style="  padding: 5rem 0rem;">
+        <h2>Projects</h2>
+        <p style="text-align: center;">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+        <div class="projects">
+        <div><img src="https://img.freepik.com/free-photo/abstract-background-dynamic-pattern-geometric-texture-modern-triangles_181020-3117.jpg?w=740"/></div>
+        <div><img src="https://img.freepik.com/free-photo/abstract-background-dynamic-pattern-geometric-texture-modern-triangles_181020-3117.jpg?w=740"/></div>
+        <div><img src="https://img.freepik.com/free-photo/abstract-background-dynamic-pattern-geometric-texture-modern-triangles_181020-3117.jpg?w=740"/></div>
+        <div><img src="https://img.freepik.com/free-photo/abstract-background-dynamic-pattern-geometric-texture-modern-triangles_181020-3117.jpg?w=740"/></div>
+        <div><img src="https://img.freepik.com/free-photo/abstract-background-dynamic-pattern-geometric-texture-modern-triangles_181020-3117.jpg?w=740"/></div>
+        <div><img src="https://img.freepik.com/free-photo/abstract-background-dynamic-pattern-geometric-texture-modern-triangles_181020-3117.jpg?w=740"/></div>
+        </div>
+    </section>
+    
+    <section id="contact" >
+        <h2>Contact</h2>
+       <div style="display: flex;">
+            <section style="width: 50%;">
+                <div class="contact-details">
+                    <div>
+                        <p><strong>Address</strong></p>
+                        <p>ABC , India</p>
+                    </div>
+                    <div>
+                        <p><strong>Email</strong></p>
+                        <p><a href="mailto:someone@example.com">almabetter@gmail.com</a></p>
+                    </div>
+                    <div>
+                        <p><strong>Phone</strong></p>
+                        <p>9876543219</p>
+                    </div>
+                    <div>
+                        <p><strong>Website</strong></p>
+                        <p>almabetter.com</p>
+                    </div>
+                </div>
+                <div style="text-align:center;">
+                    <ul id="social-platform">
+                        <a href="https://www.facebook.com/" >
+                            <li>
+                                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968764.png" />
+                            </li>
+                        </a>
+                        <a href="https://www.facebook.com/" >
+                            <li>
+                                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" />
+                            </li>
+                        </a>
+                        <a href="https://www.facebook.com/" >
+                            <li>
+                                <img src="https://cdn-icons.flaticon.com/png/512/2504/premium/2504923.png?token=exp=1654958646~hmac=1b803bf9c331127953b0c7a3d1f07616" />
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+            </section> 
+            <section style="width: 50%;">
+                <form >
+                    <fieldset>
+                        <legend>Drop a Message:</legend>
+                        <div class="form">
+                            <div>
+                                <label class="form-label">Name:</label>
+                                <br />
+                                <input class="form-control" id="fullname" type="text" name="fullname" size="30" maxlength="100" />
+                            </div>
+                            <div>
+                                <label class="form-label">Email:</label>
+                                <br />
+                                <input class="form-control" type="email" id="email" name="email" size="30" maxlength="100" />
+                            </div>
+                            <div>
+                                <label class="form-label" for="hear-about">Select your profession? </label>
+                                <br/>
+                                <select class="form-control" name="profession" id="profession">
+                                  <option value="Student">Student</option>
+                                  <option value="Founder">Founder / CEO</option>
+                                  <option value="HR">HR</option>
+                                  <option value="Tech Lead">Tech Lead</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="form-label" for="comments">Message:</label>
+                                <br />
+                                <textarea class="form-control" name="comments"  id="comments" rows="4" cols="45" id="comments"></textarea>
+                            </div> 
+                            <div>
+                                Would you connect again?
+                                <br />
+                                <label class="form-label"><input type="radio" id="connect" name="connect" value="yes" />Yes</label>
+                                <label class="form-label"><input type="radio" id="connect" name="connect" value="no" />No</label>
+                                <label class="form-label"><input type="radio" id="connect" name="connect" value="maybe" />Maybe</label>
+                            </div>
+                            <br />
+                            <button class="btn" id="btn" >Send Message</button>
+                            <ul id="menu"></ul>
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+       </div>
+    </section>
+    
+    <footer>
+        <p>Copyright ©2022 All rights reserved</p>
+    </footer>
+
+    <script>
+        var myNav = document.getElementById('navbar');
+        window.onscroll = function () { 
+            if (window.scrollY >= 500 ) {
+                myNav.classList.add("navbar-dark");
+                myNav.classList.remove("navbar-light");
+            } 
+            else {
+                myNav.classList.add("navbar-light");
+                myNav.classList.remove("navbar-dark");
+            }
+        };
+        
+        function createMenuItem(title,name) {
+            let li = document.createElement('li');
+            li.textContent = title +" : " +name;
+            li.style.fontSize='21px';
+            li.style.color='#999';
+            return li;
+        }
+
+        document.getElementById("btn").addEventListener("click", function(event){
+            event.preventDefault();
+            let name=document.getElementById("fullname").value;
+            let email=document.getElementById("email").value;
+            let profession=document.getElementById("profession").value;
+            let comments=document.getElementById("comments").value;
+            let connect=document.getElementById("connect").value;
+
+            let formArray=[name,email,profession,comments,connect];
+            let formArrayTitle=["Full Name","Email","Profession","Message Send","Want to connect"];
+
+            const menu = document.querySelector('#menu');
+            for(let i=0;i<formArray.length;i++){
+                if(formArray[i].length>0){
+                    menu.appendChild(createMenuItem(formArrayTitle[i],formArray[i]));
+                }
+            }
+        });
+             
+
+    </script>
 
 </body>
-
 </html>
+
+

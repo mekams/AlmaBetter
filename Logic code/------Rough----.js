@@ -55,3 +55,62 @@
 // let x = 1;
 
 // console.log(recursiveFunction(arr, x, 0, arr.length-1))
+
+// function reverse (a){
+//     let NewArr  =[ ]
+//     for(let i=arr.length-1; i>=0; i--){
+//        console.log(NewArr.push(arr[i]))
+//     }
+//     return NewArr
+// }
+
+// let arr =[1,2,3,4]
+// reverse(arr)
+// // reverse(arr)
+
+
+// let a=[27,28,30]
+// let b=[99,16,8]
+
+// function triplets(a,b){
+//     let i=0, j=0;
+//     let alice=0, bob=0
+//     while(i <a.length && j< b.length ){
+//         if(a[i]>b[j]){
+//              alice+=1
+//              i++
+//              j++
+//         }else if(a[i]<b[j]){
+//             bob+=1
+//             i++
+//             j++
+//         }else{
+//             i++
+//             j++
+//         }
+//     }
+//     return [alice,bob]
+// }
+// console.log(triplets(a,b))
+
+
+// const executorFunction = (resolve, reject) => {
+//     if (x==0) {
+//         resolve('I resolved!');
+//     } else {
+//         reject('I rejected!');
+//     }
+//   }
+//   const myFirstPromise = new Promise(executorFunction);
+
+// console.log(myFirstPromise)
+
+
+let str = 'flexiple';
+let str2 = str.charAt(0).toUpperCase()+ str.slice(1);
+console.log(str2);
+
+//Output: Flexiple
+// str = 'abc efg';
+// str2 = str.charAt(0).toUpperCase() + str.slice(1);
+// console.log(str2);
